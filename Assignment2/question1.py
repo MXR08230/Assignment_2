@@ -1,4 +1,5 @@
-
+#NAME: MOUNIKA RAYAPUDI
+#STUDENT ID:700740823
 import numpy as np
 m1 = np.random.randint(1,20,15)
 print("Array")
@@ -19,3 +20,4 @@ m2[0][index[0]] = 0
 m2[1][index[1]] = 0
 m2[2][index[2]] =0
 print(m2)
+
