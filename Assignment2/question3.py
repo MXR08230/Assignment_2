@@ -1,3 +1,4 @@
+
 import matplotlib.pyplot as plt
 # Data to plot
 programming_languages = ['Java', 'Python', 'PHP', 'JavaScript', 'C#', 'C++']

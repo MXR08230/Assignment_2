@@ -1,3 +1,4 @@
+
 import numpy as np
 m1 = np.random.randint(1,20,15)
 print("Array")
