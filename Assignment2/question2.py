@@ -5,19 +5,19 @@ import matplotlib.pyplot as plt
 data = pd.read_csv("./data.csv")
 data.head()
 
-#Show the basic statistical description about the data.
+#2. Show the basic statistical description about the data.
 print("data statistical description\n", data.describe())
 
-#Check if the data has null values. a. Replace the null values with the mean
+#3. Check if the data has null values. a. Replace the null values with the mean
 data.isnull().any()
 data.fillna(data.mean(), inplace=True)
 print("Null re-check \n", data.isnull().any())
 
-#Select at least two columns and aggregate the data using: min, max, count, mean.
+#4. Select at least two columns and aggregate the data using: min, max, count, mean.
 dt_agg = data.agg({'Maxpulse':['min','max','count','mean'],'Calories':['min','max','count','mean']})
 print("aggregate data \n", dt_agg)
 
-#Filter the dataframe to select the rows with calories values between 500 and 1000
+#5. Filter the dataframe to select the rows with calories values between 500 and 1000
 print("Calories data between 500 and 1000 \n", data.loc[(data['Calories']>500)&(data['Calories']<1000)], "\n")
 
 # 6. Filter the dataframe to select the rows with calories values > 500 and pulse < 100.
