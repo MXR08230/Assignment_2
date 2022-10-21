@@ -1,16 +1,14 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+import numpy as np
+a=np.random.randint(1,20,15)
+print("array")
+print(a)
+a=a.reshape(3,5)
+print("reshapped array")
+print(a)
+print("array shape")
+print(a.shape)
+print("max of array")
+print(a.max())
+print("array with replaced max value")
+a[a==a.max()]=0
+print(a)
